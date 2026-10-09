@@ -28,6 +28,14 @@
 @media (max-width:1100px){.hero-grid,.story{grid-template-columns:1fr} .hero-card{justify-self:start} .stats-grid,.signature-grid,.products,.projects-grid{grid-template-columns:repeat(2,1fr)} .gallery-grid{grid-template-columns:1fr 1fr;grid-template-areas:'a a' 'b c' 'd e'} .gallery-grid .a{min-height:380px} }
 @media (max-width:760px){nav{display:none;position:absolute;top:84px;left:0;right:0;background:rgba(255,250,247,.98);padding:22px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start} nav.open{display:flex} .mobile-toggle{display:block} .topbar .row>.btn{display:none} .hero-grid{min-height:auto} .hero-copy{padding:60px 0 24px} .hero h1{font-size:54px} .hero-card img{height:300px} .section{padding:74px 0} .stats{margin-top:-20px} .stats-grid,.signature-grid,.products,.projects-grid,.menu-photos{grid-template-columns:1fr} .story-visual{grid-template-columns:1fr} .story-visual .large img,.story-visual .small img{min-height:250px} .gallery-grid{grid-template-columns:1fr;grid-template-areas:'a' 'b' 'c' 'd' 'e'} .gallery-grid .a{min-height:320px} .section-head{display:block} .float-wa span{display:none} .cta{padding-bottom:90px} }
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} *{transition:none!important;animation:none!important}}
+
+/* Accesos flotantes persistentes: YACUSOL y WhatsApp de Dulce Mania */
+.float-yacusol{position:fixed;right:18px;bottom:86px;z-index:60;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:135px;padding:14px 18px;border-radius:999px;background:linear-gradient(135deg,#f8d568,#e6a731);border:1px solid #fff9;color:#533600;font-size:14px;font-weight:800;box-shadow:0 14px 34px rgba(105,69,10,.28);transition:transform .2s,box-shadow .2s}
+.float-yacusol:hover,.float-yacusol:focus-visible{transform:translateY(-3px);box-shadow:0 18px 40px rgba(105,69,10,.35)}
+.float-wa{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:135px}
+.float-wa:hover,.float-wa:focus-visible{transform:translateY(-3px)}
+@media(max-width:760px){.float-yacusol{right:12px;bottom:82px;padding:13px 16px;min-width:132px;font-size:13px}.float-wa{right:12px;bottom:16px;padding:13px 16px;min-width:132px;font-size:13px}.float-wa span{display:inline}}
+
 </style>
 </head>
 <body>
@@ -214,6 +222,7 @@
   </div>
 </footer>
 
+<a class="float-yacusol" href="https://energeticos2023.github.io/YACUSOL/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio de YACUSOL">☀ <span>YACUSOL</span></a>
 <a class="float-wa" href="https://wa.me/51943518901?text=Hola%20Dulce%20Man%C3%ADa%2C%20quisiera%20hacer%20un%20pedido" target="_blank" rel="noopener">✆ <span>WhatsApp</span></a>
 
 <script>
